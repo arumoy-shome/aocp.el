@@ -47,9 +47,9 @@ you could create a capture template as follows:
   :END:
 %?
 
-  #+begin_src bibtex :tangle yes
+  \#+begin_src bibtex :tangle yes
   %c
-  #+end_src
+  \#+end_src
 #+end_example
 
 Assuming you have the above template in `paper.txt', you can configure
