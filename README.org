@@ -1,0 +1,18 @@
+#+title: aocp.el (aru org-capture paper)
+#+date: [2021-06-16 Wed]
+#+author: Arumoy Shome
+
+Before I describe what this package does, a *disclaimer*: This package
+evolved organically after observing my workflow of managing
+bibliographic information in Emacs. The functionality provided by this
+package is tuned towards how I work. As of [2021-06-16 Wed], the
+target audience for this package is just me and I do not intend to
+publish it in any Emacs package repositories. The code is very much in
+it's infancy or "alpha" stage, several things can be improved and a
+few kinks need to be fixed.
+
+That being said, if you stumble upon this package and wish to use it,
+it may help to gain some perspective on my workflow (see [[https://arumoy.me/org/20210603_203538--zettel--research-workflow.html][research
+workflow]]). You have two ways to install this package: 1. Manually, by
+downloading the `aocp.el' file and sticking it in your Emacs
+`load-path', or 2. Using [[https://github.com/raxod502/straight.el][straight.el]] which is what I recommend.
