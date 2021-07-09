@@ -2,10 +2,10 @@
 
 ;;; variables
 
-(defconst aocp-bibkey-regex  "@\\w+{\\(\\w+\\),"
+(defconst aocp-bibkey-regex  "@\\w+{\\(\\w+\\)"
   "Format of bibkey in a bibentry.")
 
-(defconst aocp-author-regex "author=\\({.*}\\),"
+(defconst aocp-author-regex "author=\\({.*}\\)"
   "Format of authors in a bibentry.")
 
 (defconst aocp-first-author-regex "^{\\(\\w+,?.\\(\\w+.\\)+\\)and\\|}"
@@ -14,7 +14,7 @@
 (defconst aocp-last-author-regex "\\(\\w+,?.\\(\\w+.?\\)+\\)}$"
   "Format of last author in a bibentry.")
 
-(defconst aocp-source-regex "\\(booktitle\\|journal\\)={\\(.*\\)},"
+(defconst aocp-source-regex "\\(booktitle\\|journal\\)={\\(.*\\)}"
   "Format of publishing source in a bibentry.")
 
 (defconst aocp-year-regex "year={\\(.*\\)}"
