@@ -17,6 +17,9 @@
 (defconst aocp-source-regex "\\(booktitle\\|journal\\)={\\(.*\\)},"
   "Format of publishing source in a bibentry.")
 
+(defconst aocp-year-regex "year={\\(.*\\)}"
+  "Format of year in a bibentry.")
+
 (defvar bibentry nil
   "The bibentry.")
 
@@ -81,5 +84,14 @@
     (string-match aocp-source-regex bibentry)
     (setq source (match-string 2 bibentry))
     source))
+
+;;;###autoload
+(defun aocp--get-year ()
+  "Return the year of publication from a bibentry."
+
+  (let ((year nil))
+    (string-match aocp-year-regex bibentry)
+    (setq year (match-string 1 bibentry))
+    year))
 
 (provide 'aocp)
